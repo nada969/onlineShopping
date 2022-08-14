@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavigationStart, Router } from '@angular/router';
+import { LoginService } from './service/login.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'onlineShopping';
+
+  title = 'project';
+
+  constructor(private _loginService: LoginService, private _router: Router){
+    this._router.events.subscribe(e => {
+
+      
+      
+      if(e instanceof NavigationStart) {
+
+        let url = e.url.toString();
+        if(this._loginService.CheckUserAuth()) {
+
+            if(url.includes('login') || url.includes('register')) {
+              this._router.navigate(['']);
+            }
+        }
+        else {
+
+
+          if(url.includes('login') == false && url.includes('register') == false) {
+            this._router.navigate(['login']);
+          }
+
+        }
+      }
+
+
+
+    });
+
+  }
 }
