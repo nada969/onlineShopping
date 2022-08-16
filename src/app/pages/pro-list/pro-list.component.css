@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=pro-list.component.css.map */
+.container {
+  padding-bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.example-card {
+  max-width: 400px;
+  margin-bottom: 8px;
+}
+/*# sourceMappingURL=pro-list.component.css.map */
