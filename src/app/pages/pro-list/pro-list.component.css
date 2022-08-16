@@ -7,6 +7,45 @@
       flex-wrap: wrap;
 }
 
+.container .card {
+  margin: auto;
+  overflow: hidden;
+  border: none;
+  padding: 7px;
+}
+
+.container .card .cardContent {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 0 7px 0px #a09a9a;
+          box-shadow: 0 0 7px 0px #a09a9a;
+  overflow: hidden;
+}
+
+.container .card .cardContent .cardImage img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0 0 12px 12px;
+}
+
+.container .card .cardContent .cardText {
+  color: #8c4800;
+  padding: 17px 12px 0 12px;
+}
+
+.container .card .cardContent .cardText h1 {
+  color: #cf6a07;
+  text-transform: capitalize;
+}
+
+.container .card .cardContent .cardText button {
+  float: right;
+  -webkit-box-shadow: 0 0 2px 0px red;
+          box-shadow: 0 0 2px 0px red;
+  margin-bottom: 5px;
+  color: #d60909;
+}
+
 .example-card {
   max-width: 400px;
   margin-bottom: 8px;

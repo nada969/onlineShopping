@@ -17,10 +17,12 @@ export class NavComponent implements OnInit {
   }
 
   showHide(x:HTMLDivElement) {
-    if (x.className === "topnav") {
-      x.className += " responsive";
+    console.log(x.className);
+    if (x.className === "topnav menu") {
+      
+      x.className = "topnav responsive";
     } else {
-      x.className = "topnav";
+      x.className = "topnav menu";
     }
   }
 
