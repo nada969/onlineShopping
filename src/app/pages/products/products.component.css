@@ -1,0 +1,29 @@
+header {
+  height: 80%;
+  width: 100%;
+  background: url("/assets/images/background.jpg");
+  margin-bottom: 50px;
+}
+
+header b {
+  font-size: 51px;
+  color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 197px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  line-height: normal;
+}
+
+@media screen and (max-width: 600px) {
+  header b {
+    font-size: 32px;
+  }
+}
+/*# sourceMappingURL=products.component.css.map */

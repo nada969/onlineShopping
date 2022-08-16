@@ -1,22 +1,48 @@
-.topnav {
-    overflow: hidden;
-    background-color: #93733a;
+.menu {
+  background-color: transparent;
+  overflow: hidden;
+  padding: 20px;
+  list-style-type: none;
+  margin: 0px;
+}
+
+/* Style the links inside the navigation bar */
+.menu a {
+  float: left;
+  color: #8a5d34;
+  text-align: center;
+  padding: 14px 10px;
+  margin: 5px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 30px;
+  width: 100px;
+  &:hover {
+    opacity: 0.8;
   }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  &.active {
+    background-color: #8a5d34;
+    color: whitesmoke;
   }
-  
-  .topnav a:hover,a.active {
-    background-color: #c2984f;
-    color: #efeaea;
-  }
+}
+
+
+// .icon {
+//   float: right;
+//   color: #8a5d34;
+//   text-align: center;
+//   padding: 14px 16px;
+//   margin: 5px 15px;
+//   text-decoration: none;
+//   font-size: 20px;
+//   border-radius: 30px;
+//   border: 0px;
+//   &:hover {
+//     background-color: #8a5d34;
+//     color: whitesmoke;
+//     cursor: pointer;
+//   }  
+// }
   
   
   .topnav .icon {
@@ -26,8 +52,9 @@
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
-      float: right;
       display: block;
+      position: absolute;
+      right: 0;
     }
   }
   

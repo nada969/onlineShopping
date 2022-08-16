@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { menuData } from './components/nav/nav';
+import { menuData } from './components/nav/nav'
 
 @Component({
   selector: 'app-root',

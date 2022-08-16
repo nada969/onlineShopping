@@ -4,20 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
-import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  import {MatCardModule} from '@angular/material/card';
-import { ProductsComponent } from './components/products/products.component';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { CartComponent } from './pages/cart/cart.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { ProListComponent } from './pages/pro-list/pro-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HeaderComponent,
-    ProductsComponent
+    ProductsComponent,
+    CartComponent,
+    ProListComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     MatCardModule,
     MatMenuModule,
+    MatGridListModule,
     NgbModule
   ],
   providers: [],
