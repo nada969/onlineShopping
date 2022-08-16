@@ -28,4 +28,12 @@ header b {
     font-size: 32px;
   }
 }
+
+.add button {
+  float: right;
+  -webkit-box-shadow: 0 0 2px 0px #ffbb00;
+          box-shadow: 0 0 2px 0px #ffbb00;
+  margin-bottom: 5px;
+  color: #d69f09;
+}
 /*# sourceMappingURL=products.component.css.map */
