@@ -10,24 +10,24 @@ import { LoginService } from './service/login.service';
 export class AppComponent {
 
   title = 'project';
+  isLogin: boolean = false; 
 
   constructor(private _loginService: LoginService, private _router: Router){
     this._router.events.subscribe(e => {
 
-      
-      
       if(e instanceof NavigationStart) {
 
         let url = e.url.toString();
         if(this._loginService.CheckUserAuth()) {
+            this.isLogin = this._loginService.CheckUserAuth();
 
             if(url.includes('login') || url.includes('register')) {
-              this._router.navigate(['']);
+              this._router.navigate(['home']);
             }
         }
         else {
 
-
+          this.isLogin = this._loginService.CheckUserAuth();
           if(url.includes('login') == false && url.includes('register') == false) {
             this._router.navigate(['login']);
           }

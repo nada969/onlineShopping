@@ -1,0 +1,20 @@
+<div>
+    <ul class="menu">
+      <li>
+        <a [routerLink]="['/home']" [routerLinkActive]="['active']">Home</a>
+      </li>
+      
+      <li>
+        <a [routerLink]="['/cart']" [routerLinkActive]="['active']" badge="8">Cart</a>
+      </li>
+      
+      <li>
+        <a [routerLink]="['/profile']" [routerLinkActive]="['active']"> Profile</a>
+      </li>
+
+      <li>
+        <button type="submit" (click) = "signOut()">sign out</button>
+      </li>
+  
+    </ul>
+    </div>
